@@ -5,7 +5,7 @@ WORKDIR /
 COPY requirements.txt requirements.txt 
 COPY server.sh server.sh
 
-ENV GOOGLE_APPLICATION_CREDENTIALS='./secrets/credentials'
+# ENV GOOGLE_APPLICATION_CREDENTIALS='./secrets/credentials'
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
